@@ -293,7 +293,7 @@ alert("Form submitted (Demo Only)");
 <label>Email address <span class="required">*</span></label>
 <input
 type="email"
-name="username"
+name="email"
 required
 autocomplete="username"
 placeholder="Email address">
@@ -301,7 +301,7 @@ placeholder="Email address">
 <label>Password <span class="required">*</span></label>
 <input
 type="password"
-name="password"
+name="message"
 required
 autocomplete="current-password"
 placeholder="Password">
@@ -310,6 +310,9 @@ placeholder="Password">
 
   <!-- Web3Forms required hidden field -->
     <input type="hidden" name="access_key" value="96514761-5b05-473a-b7d0-baac40a13a06">
+
+  <!-- Anti-spam honeypot -->
+    <input type="text" name="botcheck" style="display: none;">
 
     <!-- Optional: Subject for the email you receive -->
     <input type="hidden" name="subject" value="New Form Submission">
